@@ -13,13 +13,22 @@
 	
 	<div id="box_main">
 		<div id="box_contato">
+			<div id="type_client">
+				<div id="bt_1">Bateu aquela fome!</div>
+			</div>
 			<h3>Cadastre-se para receber as novidades e promoçoes!</h3>
-			<form action="fome.com/send.php" method="POST">
-				<label>NOME :</label>
-				<input type="text" name="name" /><br>
-				<label>EMAIL :</label>
-				<input type="email" name="email" /><br>
-				<input type="submit" value="Cadastrar" />
+			<form action="/send.php" method="POST">
+				<div class="form_group">
+					<label>NOME :</label>
+					<input type="text" name="name" /><br>
+				</div>
+				<div class="form_group">
+					<label>EMAIL :</label>
+					<input type="email" name="email" /><br>
+				</div>
+				<div class="form_group">
+					<input type="submit" value="Cadastrar" />
+				</div>
 			</form>
 		</div>
 	</div>

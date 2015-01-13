@@ -11,43 +11,111 @@
 
 }
 
-body{font-family: groboldregular; text-align: center;margin: 0 auto;background: orange;}
+body{font-family: groboldregular; text-align: center;margin: 0 auto;background: rgba(255, 165, 0, 0.24);}
 img{width: 1000px;margin-top: 20px;}
 #box_main{
 	background: url(../img/medeufome.jpg)no-repeat;
-	width: 850px;
-	height: 700px;
-	background-size: 100%;
-	margin: 70px auto;
+width: 1000px;
+height: 615px;
+background-size: 100%;
+margin: 0 auto 0;
+position: relative;
+bottom: 0;
 }
 
 .box_top{
 	width: 100%;
-	height: 50px;
+	height: 90px;
+	z-index: 10;
 	background: white;
-	border-bottom: red 2px solid;
+	border-bottom: white 2px solid;
 	position: fixed;
 	top: 0;
+	background: #ffa84c; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffa84c 0%, #ff7b0d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa84c), color-stop(100%,#ff7b0d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffa84c 0%,#ff7b0d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+
 }
 
 .box_top h1 img{
-	width: 100px;
+	width: 168px;
 	position: absolute;
 	top: -34px;
 	left: 30px;
 }
 .box_top iframe{
 	float: right;
+	margin-top: 13px;
 }
 
 #box_main #box_contato{
-	width: 400px;
-height: 300px;
+width: 500px;
+height: 270px;
 background: rgba(255, 255, 255, 0.68);
 margin: auto;
 position: relative;
-top: 50px;
+top: 150px;
 }
+
+#box_main #box_contato h3{padding: 0 10px;}
+
 #box_main #box_contato form label{
-	margin-right: 15px;
+	padding: 8px 0;
+	width: 80px;
+	position: absolute;
+	left: 30px;
 }
+#box_main #box_contato form input{
+	width: 350px;
+float: right;
+margin-right: 30px;
+height: 25px;
+background: rgba(255, 255, 255, 0.75);
+}
+
+#box_main #box_contato form input[type="submit"]{
+	color: white;
+background: rgba(0, 0, 255, 0.71);
+border: 2px solid blue;
+height: 40px;
+margin: 0 auto;
+float: none;
+width: 120px;
+font-family: groboldregular;
+font-size: 20px;
+text-shadow: 2px 2px black;
+cursor: pointer;
+}
+
+#box_main #box_contato form .form_group{
+	margin-bottom: 25px;
+}
+
+#box_main #box_contato #type_client{
+	display: flex;
+	overflow: hidden;
+}
+
+#box_main #box_contato #type_client button{
+	width: 50%;
+height: 60px;
+border: none;
+}
+
+#box_main #box_contato #type_client #bt_1{
+float: left;
+background: rgba(0, 0, 255, 0.6);
+color: white;
+font-size: 30px;
+text-shadow: 1px 3px black;
+font-family: groboldregular;
+width: 100%;
+height: 37px;
+padding-top: 12px;
+}
+
